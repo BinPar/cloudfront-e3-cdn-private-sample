@@ -6,6 +6,7 @@
     "binpar",
     "camelcase",
     "downlevel",
+    "keypair",
     "plusplus",
     "respawn",
     "sourcemap",
