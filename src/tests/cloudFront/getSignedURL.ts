@@ -4,7 +4,7 @@ import getPrivateKey from '../../tools/getPrivateKey';
 test('Get SignedURL for accessing a S3 MP3 using CloudFront', async (): Promise<
   void
 > => {
-  const cloudfrontAccessKeyId = '';
+  const cloudfrontAccessKeyId = 'APKAIKWN4SW4UZ4YBY5Q';
   const cloudFrontPrivateKey = await getPrivateKey();
   const signer = new AWS.CloudFront.Signer(
     cloudfrontAccessKeyId,
@@ -17,5 +17,9 @@ test('Get SignedURL for accessing a S3 MP3 using CloudFront', async (): Promise<
     expires: Math.floor((Date.now() + twoDays) / 1000),
   });
 
-  expect(signedUrl).toBe(3);
+  expect(signedUrl.split(':')[0]).toBe('https');
+
+  // eslint-disable-next-line no-console
+  console.log(`The URL IS:\r\n${signedUrl}`);
+
 });
