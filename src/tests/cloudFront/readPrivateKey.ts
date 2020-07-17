@@ -1,4 +1,4 @@
-import getPublicKey from '../../tools/getPublicKey';
+import getPublicKey from '../../tools/getPrivateKey';
 
 test('Verify Public Key File Length', async (): Promise<void> => {
   const key = await getPublicKey();
