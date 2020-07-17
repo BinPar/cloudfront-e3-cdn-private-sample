@@ -13,7 +13,7 @@ test('Get SignedURL for accessing a S3 MP3 using CloudFront', async (): Promise<
   const twoDays = 2 * 24 * 60 * 60 * 1000;
 
   const signedCookies = signer.getSignedCookie({
-    url: 'https://d3tuovxue5pcj7.cloudfront.net/test',
+    url: 'https://d3tuovxue5pcj7.cloudfront.net/test/cedric_about_tq_brief.mp3',
     expires: Math.floor((Date.now() + twoDays) / 1000),
   });
   expect(signedCookies["CloudFront-Signature"].length).toBeGreaterThan(10);
