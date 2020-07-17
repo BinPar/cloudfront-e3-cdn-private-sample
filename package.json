@@ -1,7 +1,7 @@
 {
-  "name": "ts-node-boilerplate",
+  "name": "cloudfront-s3-cdn-private-sample",
   "version": "0.3.19",
-  "description": "Node Boilerplate from BinPar TypeScript Projects",
+  "description": "Sample of how to serve private content using AWS CloudFront from Amazon S3",
   "engines": {
     "node": ">=10"
   },
@@ -21,7 +21,11 @@
     "ts-node-boilerplate",
     "binpar",
     "boilerplate",
-    "typescript"
+    "typescript",
+    "cloudfront",
+    "e3",
+    "private",
+    "sample"
   ],
   "author": "Ignacio Ferro Picón <nacho@binpar.com> (https://binpar.com/)",
   "license": "ISC",

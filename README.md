@@ -1,3 +1,3 @@
-# Node Boilerplate
+# CloudFront S3 CDN Private Sample
 
-Node Boilerplate from BinPar TypeScript Projects
+Sample of how to serve private content using AWS CloudFront from Amazon S3
