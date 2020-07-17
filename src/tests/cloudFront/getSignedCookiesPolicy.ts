@@ -18,7 +18,7 @@ test('Get SignedURL for accessing all the contents of an S3 test folder using Cl
         Domain: 'd3tuovxue5pcj7.cloudfront.net',
         Path: 'test',
         Condition: {
-          IpAddress: { 'AWS:SourceIp': '2.136.101.9' },
+          IpAddress: { 'AWS:SourceIp': '2.136.101.9/32' },
           DateLessThan: {
             'AWS:EpochTime': Math.floor((Date.now() + twoDays) / 1000),
           },
