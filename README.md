@@ -10,4 +10,5 @@ Sample of how to serve private content using AWS CloudFront from Amazon S3
 - Creé una nueva distribución asociada a prh-bibooks.s3 bajo la URL https://prh-bibooks.s3.amazonaws.com/
 - Decido acceder a los contenidos mediante [URLs Firmadas](https://docs.aws.amazon.com/es_es/AmazonCloudFront/latest/DeveloperGuide/private-content-signed-urls.html) porque Marcos va a empezar con Audio Libros, pero también se podría emplear [Cookies Firmadas](https://docs.aws.amazon.com/es_es/AmazonCloudFront/latest/DeveloperGuide/private-content-signed-cookies.html) para modo de WebView en streaming
 - Haciendo Click en La consola de Amazon sobre mi nombre (en la barra superior) elijo la opción `Mis credenciales de seguridad` para generar los certificados de CloudFront (este punto tuvo que hacerlo Marcos porque sono se puede hacer con la cuenta root)
-- Me copié las claves privadas y publicas al directorio `keys` del raíz (OJO! cualquiera tendrá que hacer lo mismo porque por motivos evidentes esta añadido al .gitignore).
+- Me copié las claves privadas y publicas al directorio `keys` del raíz (OJO! cualquiera tendrá que hacer lo mismo porque por motivos evidentes esta añadido al `.gitignore`
+- Instalo la librería: `npm i aws-sdk`
