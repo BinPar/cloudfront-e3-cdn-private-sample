@@ -15,8 +15,8 @@ test('Get SignedURL for accessing all the contents of an S3 test folder using Cl
   const policy = JSON.stringify({
     Statement: [
       {
-        Domain: 'd3tuovxue5pcj7.cloudfront.net',
-        Path: 'books/9788425232695',
+        Domain: 'cdn.read.garden',
+        Path: 'books/9788401019715/5f314fac08b39700139f2f98',
         Condition: {
           IpAddress: { 'AWS:SourceIp': '2.136.101.9/32' },
           DateLessThan: {
@@ -37,6 +37,6 @@ test('Get SignedURL for accessing all the contents of an S3 test folder using Cl
     CloudFront-Key-Pair-Id=${signedCookies['CloudFront-Key-Pair-Id']}
     CloudFront-Signature=${signedCookies['CloudFront-Signature']}
     CURL:
-    curl -v --cookie "CloudFront-Policy=${signedCookies['CloudFront-Policy']};CloudFront-Key-Pair-Id=${signedCookies['CloudFront-Key-Pair-Id']};CloudFront-Signature=${signedCookies['CloudFront-Signature']}" https://d3tuovxue5pcj7.cloudfront.net/books/9788425232695/5f1f4200b18cf90011bfebd8/bg/16/bg68.jpg
+    curl -v --cookie "CloudFront-Policy=${signedCookies['CloudFront-Policy']};CloudFront-Key-Pair-Id=${signedCookies['CloudFront-Key-Pair-Id']};CloudFront-Signature=${signedCookies['CloudFront-Signature']}" https://cdn.read.garden/books/9788401019715/5f314fac08b39700139f2f98/multimedia/Image_001.jpg
   `);
 });
